@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIYANSHU Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            line-height: 1.6;
+            height: 100%;
+        }
+
+        /* Video background styling */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Keep the video behind other content */
+        }
+
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure the video fills the background */
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            height: 100vh;
+            display: flex;
+            text-align: left;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #fff;
+            font-size: 30px;
+        }
+
+        button {
+            margin-top: 50px;
+            padding: 1rem 2.8rem;
+            font-size: 1.4rem;
+            font-weight: bolder;
+            cursor: pointer;
+            background-color: #e99b29;
+            color: black;
+            box-shadow: 0 0 25px #e99b29;
+            border-radius: 4rem;
+            margin-left: 10px;
+            transition: .5s;
+        }
+
+        button:hover {
+            transform: scale3d(1.03);
+            background-color: transparent;
+            color: #e99b29;
+            border: 2px solid #e99b29;
+        }
+
+        .quiz-section {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .quiz-section .quiz-box {
+            position: relative;
+            border: 2px solid #e99b29;
+            box-shadow: 0 0 20px #e99b29;
+            background-color: transparent;
+            width: 600px;
+            border-radius: 9px;
+            padding: 10px 40px;
+            display: flex;
+            flex-direction: column;
+            line-height: 3rem;
+            backdrop-filter: blur(10px);
+
+        }
+
+        .quiz-section .quiz-box h1 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .quiz-box .quiz-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 2px solid #e99b29;
+            font-size: 1.5rem;
+        }
+
+        .quiz-header span {
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .quiz-header .header-score {
+            background-color: #e99b29;
+            box-shadow: 0 0 25px #e99b29;
+            border-radius: 4px;
+            padding: 7px;
+        }
+
+        .quiz-box .question-text {
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .option-list .option {
+            width: 100%;
+            padding: 12px;
+            background-color: transparent;
+            border: 2px solid rgba(137, 247, 11, 0.2);
+            border-radius: 7px;
+            font-size: 17px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        .option-list .option:hover {
+            background-color: rgba(255, 255, 255, .1);
+            border-color: aqua;
+        }
+
+        .quiz-box .quiz-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 2px solid #e99b29;
+            padding-top: 0px;
+            margin-top: 10px;
+        }
+
+        .quiz-footer .question-total {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        /* Correct and Incorrect styles */
+        .correct {
+            border-color: green !important;
+            background-color: #218838 !important;
+        }
+
+        .incorrect {
+            border-color: red !important;
+            background-color: red !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Video background section -->
+    <section id="profile">
+        <div class="video-background">
+            <video autoplay loop muted playsinline>
+                <source src="vecteezy_ai-generative-halloween-pumpkins-and-a-castle-in-the-dark_33949895.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <!-- Quiz Content -->
+    <div class="container">
+        <section class="quiz-section">
+            <div class="quiz-box">
+                <h1>Quiz</h1>
+                <div class="quiz-header">
+                    <span>Quiz Website Tutorial</span>
+                    <span class="header-score">Score: 0/5</span>
+                </div>
+                <h2 class="question-text">What Does HTML stand for?</h2>
+                <div class="option-list">
+                    <div class="option" data-answer="correct"><span>a. HyperText Markup Language</span></div>
+                    <div class="option" data-answer="incorrect"><span>b. HighText Markup Language</span></div>
+                    <div class="option" data-answer="incorrect"><span>c. Hyper Trainer Marking Language</span></div>
+                    <div class="option" data-answer="incorrect"><span>d. HyperText Markup Language</span></div>
+                </div>
+                <div class="quiz-footer">
+                    <div class="question-total">
+                        <button class="next-btn">Next</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Quiz Logic -->
+   <script src="script.js"></script>
+      </body>
+
+      </html>
+      

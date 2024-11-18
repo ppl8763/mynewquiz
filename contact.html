@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Quiz</a>
+    
+        <nav>
+            <a href="index.html" > Home</a>
+            <a href="#" >Prizes</a>
+            <a href="#" >Your Score</a>
+            <a href="#" class="active" >Contact</a>
+        </nav>
+    </header>
+    <section id="profile">
+        <div class="video-background">
+            <video autoplay loop muted plays-inline class="background-clip">
+                <source src="184576-873564667_small.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If You have any querry, fell free to reach out to me by filling the from below</p>
+        <div class="contact-card">
+            <form id="form">
+                <div class="group-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="group-form">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="abc@gmail.com" required>
+                </div>
+
+                <div class="group-form">
+                    <label for="message">Message</label>
+                    <input type="text" id="message" name="message" placeholder="Bol Bhai" required>
+                </div>
+
+                <button class="btn-message" type="submit" id="button">Send Message</button>
+            </form>
+
+        </div>
+    </section>
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('mVHtYLVlKWqa_hN6u')
+</script>
+<script src="contact.js"></script>
+</body>
+</html>

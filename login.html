@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Montserrat:wght@400;500&display=swap");
+
+        :root {
+            --header-height: 3.5rem;
+            --first-color: hsl(185, 100%, 48%);
+            --white-color: hsl(0, 0%, 100%);
+            --black-color: hsl(222, 100%, 2%);
+            --radial-color: radial-gradient(52% 52% at 50% 50%, hsl(202, 90%, 38%) 0%, hsl(222, 100%, 6%) 100%);
+            --body-font: "Montserrat", sans-serif;
+            --second-font: "Jolly Lodger", cursive;
+            --biggest-font-size: 3rem;
+            --big-font-size: 1.5rem;
+            --h2-font-size: 1.25rem;
+            --normal-font-size: .938rem;
+            --small-font-size: .813rem;
+            --font-regular: 400;
+            --font-medium: 500;
+            --z-tooltip: 10;
+            --z-fixed: 100;
+        }
+
+        /* Media queries for responsive design */
+        @media screen and (min-width: 1150px) {
+            :root {
+                --biggest-font-size: 9rem;
+                --big-font-size: 3.5rem;
+                --h2-font-size: 1.5rem;
+                --normal-font-size: 1rem;
+                --small-font-size: .875rem;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr); /* Create 10 equal columns */
+            grid-template-rows: repeat(10, 1fr); /* Create 10 equal rows */
+            gap: 1px; /* Add some space between the boxes */
+            background-color:#111;
+            position: relative;
+        }
+
+        /* Create individual grid box styles */
+        .box {
+            background-color: #555;
+            transition: background-color 0.7s ease, transform 0.9s ease; /* Smooth color transition and scaling */
+        }
+
+        .box:hover {
+            background-color: hsl(91, 88%, 47%); /* Change color on hover */
+            transform: scale(1.0); /* Slightly enlarge the box on hover */
+        }
+
+        /* Main login page styling */
+        .login-page {
+            grid-column: span 8; /* Make the login form span over 8 columns */
+            grid-row: span 8; /* Make the login form span over 8 rows */
+            background-color: #fff;
+            text-align: center;
+            border: 2px solid #e9e9e9;
+            border-radius: 20px;
+            box-shadow: 0 10px 13px #555;
+            font-family: var(--body-font);
+            font-size: var(--normal-font-size);
+            padding: 30px 10px;
+            position: absolute;
+            top: 25%;
+            left: 35%;
+            width: 30%;
+            height: 60vh;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: var(--font-medium);
+        }
+
+        .textarea {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: #f7f7f7;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .textarea:hover {
+            background-color: #e0e0e0;
+        }
+
+        .textarea h3 {
+            margin-bottom: 10px;
+            font-weight: var(--font-medium);
+        }
+
+        input {
+            width: 100%;
+            padding: 15px;
+            border-radius: 20px;
+            font-family: var(--font-regular);
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: var(--first-color);
+        }
+
+        .but {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            border-radius: 10px;
+            position: relative;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            padding: 15px 20px;
+            width: 100%;
+            height: auto;
+            color: #fff;
+        }
+
+        .but h3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: var(--font-medium);
+            color: #fff;
+        }
+
+        .but img {
+            width: 150px; /* Set image size */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Create the grid background boxes -->
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+   
+    
+    
+    
+    <!-- Login page -->
+    <div class="login-page">
+        <h1>LogIn</h1>
+
+        <div class="textarea">
+            <h3>Enter your username</h3>
+            <input type="text" placeholder="Username">
+        </div>
+
+        <div class="textarea">
+            <h3>Enter your password</h3>
+            <input type="password" placeholder="Password">
+        </div>
+
+        <div class="but">
+            <h3>Click Here</h3>
+            <img src="button.svg" alt="Submit">
+        </div>
+    </div>
+
+</body>
+</html>

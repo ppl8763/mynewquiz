@@ -1,0 +1,162 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+  
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    line-height: ;
+    font-family: Arial, sans-serif;
+    
+}
+header{
+    margin-top: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    height: 10vh;
+}
+
+.logo{
+    font-size: 32px;
+    color: #e99b29;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.up-btn{
+    margin-left: rem;
+}
+.logo:hover{
+    transform: scale(1.5);
+}
+
+nav a{
+    font-size: 1.2rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight:bolder;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color:#e99b29;
+    border-bottom: 3px solid  #e99b29;
+}
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; 
+}
+video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button{
+    margin-top: 50PX;
+    padding: 1rem 2.8rem;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: #e99b29;
+    color: black;
+    box-shadow: 0 0 25px #e99b29;
+    border-radius: 4rem;
+    margin-left: 10px;
+    transition: .4s;
+   
+   
+}
+
+button:hover{
+    transform: scale3d(1.03);
+    background-color:transparent;
+    color: #e99b29;
+    border: 2px solid #e99b29;
+}
+#contact{
+    background-color: transparent;
+    padding: 50px 0;
+    text-align: center;
+    height: 100vh;
+}
+#contact h2{
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 60px;
+    text-shadow: 0 0 10px #000;
+}
+#contact p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    color:#fff;
+}
+.contact-card{
+    max-width: 100vh;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 4px 12px #e99b29;
+    border-radius: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid #e99b29;
+}
+.group-form{
+    margin-bottom: 20px;
+    text-align: left;
+}
+.group-form label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color:#fff
+}
+.group-form input,
+.group-form text area{
+width: 96%;
+padding: 10px;
+border: none;
+border-bottom: 2px solid #e99b29;
+font-size: 16px;
+background-color: transparent;
+}
+.group-form textarea{
+    height:150px;
+    resize: none;
+    background-color: transparent;
+    color: #fff;
+    
+}
+.group-form textarea:hover{
+    cursor: pointer;
+    background-color: #b74b4b;
+}
