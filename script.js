@@ -7,49 +7,58 @@ let currentQuestionIndex = 0;
 
 const questions = [
     {
-        question: "What Does HTML stand for?",
+        question: "What is the name of the highest civilian award in India?",
         options: [
-            { text: "a. HyperText Markup Language", isCorrect: true },
-            { text: "b. HighText Markup Language", isCorrect: false },
-            { text: "c. Hyper Trainer Marking Language", isCorrect: false },
-            { text: "d. HyperText Markup Language", isCorrect: false }
+            { text: "a. Bharat Ratna", isCorrect: true },
+            { text: "b. Padma shri", isCorrect: false },
+            { text: "c. Padma Bhushan", isCorrect: false },
+            { text: "d. Padma Vibhusan", isCorrect: false }
         ]
     },
     {
-        question: "What does CSS stand for?",
+        question: "Who was the first Indian woman to climb Mount Everest?",
         options: [
-            { text: "a. Creative Style Sheets", isCorrect: false },
-            { text: "b. Cascading Style Sheets", isCorrect: true },
-            { text: "c. Computer Style Sheets", isCorrect: false },
-            { text: "d. Colorful Style Sheets", isCorrect: false }
+            { text: "a. Bachendri pal", isCorrect: false },
+            { text: "b. Santosh yadav", isCorrect: true },
+            { text: "c. Arunima sinha", isCorrect: false },
+            { text: "d. Premlata Agarwal", isCorrect: false }
         ]
     },
     {
-        question: "Which HTML element is used to display a picture?",
+        question: "Who was the first Indian to win the Nobel prize?",
         options: [
-            { text: "a. <img>", isCorrect: true },
-            { text: "b. <picture>", isCorrect: false },
-            { text: "c. <image>", isCorrect: false },
-            { text: "d. <photo>", isCorrect: false }
+            { text: "a. Rabindranath tagore", isCorrect: true },
+            { text: "b. C.V Raman", isCorrect: false },
+            { text: "c. Amartya Sen", isCorrect: false },
+            { text: "d. Mother Teresa", isCorrect: false }
         ]
     },
     {
-        question: "Which property is used to change the background color in CSS?",
+        question: "when will BBPS carnival held",
         options: [
-            { text: "a. background-color", isCorrect: true },
-            { text: "b. color-background", isCorrect: false },
-            { text: "c. bg-color", isCorrect: false },
-            { text: "d. bgcolor", isCorrect: false }
+            { text: "a. 27th sep", isCorrect: true },
+            { text: "b. 28th sep", isCorrect: false },
+            { text: "c. 25th sep", isCorrect: false },
+            { text: "d. 30th sep", isCorrect: false }
+       ]
+    }, 
+    {
+        question: "Who is the first Indian woman to win an Olympic medal?",
+        options: [
+            { text: "a. Kranam Malleswari", isCorrect: true },
+            { text: "b. P.V Sindhu", isCorrect: false },
+            { text: "c. Saina Mirza", isCorrect: false },
+            { text: "d. Saina Nehwal", isCorrect: false }
         ]
     },
     {
-        question: "Which of the following is not a JavaScript data type?",
+        question: "What is the name of the largest Indian state by area?",
         options: [
-            { text: "a. Number", isCorrect: false },
+            { text: "a.Uttar pradesh ", isCorrect: false },
 
-      { text: "b. Boolean", isCorrect: false },
-      { text: "c. String", isCorrect: false },
-      { text: "d. Character", isCorrect: true }
+     { text: "b. Maharashtra", isCorrect: false },
+      { text: "c. Madhya Pradesh", isCorrect: false },
+      { text: "d. Rajasthan", isCorrect: true }
     ]
   }
 ];
